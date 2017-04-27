@@ -37,8 +37,8 @@ order:
   # - [publications, 1, Publications, 0]
   - [research, 1, Research projects, experience]
   - [professional, 1, Professional experience/projects, experience]
-  - [projects, 1, Other/hobby projects, 0]
-  - [courses, 1, Selected courses, latextype_double_items]
+  - [projects, 1, Other/hobby projects, experience]
+  # - [courses, 1, Selected courses, latextype_double_items]
   # - [skills, 1, Technical skills, 0]
   # - [languages, 1, Natural languages, 0]
 
@@ -138,9 +138,25 @@ education:
       - Graduated Ranking 1st out of about 200 students in CS department
 
 projects:
-  - Software lead for lab's teleoperation robot, built from scratch
-  - Automation of assembly line robot (Allen-Bradley PLCs)
-  - Résumé and cover letter generator (Python, Jinja, and \LaTeX)
+  - date: Bachelor's thesis project
+    employer: Smart Debugger
+    notes:
+      - The aim of this project is to provide a semi-automated debugger for the Java platform that uses an interactive technique to help the user locate bugs easier and faster
+      - Using Java, JPDI (Java Platform Debug Interface), JSP, AJAX
+      - https://sites.google.com/site/kareemergawy/smartdebugging
+
+  - date: Hobby project
+    employer: Robot SLAM
+    notes:
+      - This is the project I am currently working on. It is a research project about how to apply the set of techniques called SLAM (Simultaneous Localization and Mapping) on the Lego Mindstorms NXT platform using computer vision as a means for landmark extraction.
+      - https://sites.google.com/site/kareemergawy/robot-slam
+
+  - date: Hobby project
+    employer: Competitive programming
+    notes:
+      - From time to time I like to solve competitive programming problems for fun
+      - https://github.com/KareemErgawy/usaco-solutions
+      - https://leetcode.com/kareemergawy/
 
 courses:
   - Robotics
