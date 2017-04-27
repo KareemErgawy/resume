@@ -1,8 +1,8 @@
 # Documentation at bottom of file
 name:
-  first: Jean
-  last: Nassar
-  abbrev: jnassar
+  first: Kareem 
+  last: Ergawy
+  abbrev: KareemErgawy 
 
 engine: pdflatex
 last_updated_method: git
@@ -12,17 +12,17 @@ theme:
   style: banking
   colour: purple
 
-title: Résumé
+title: C.V.
 
 # Markdown details
 # pdf: /assets/resume.pdf
 # source: https://github.com/masasin/resume
 
 contact:
-  email: jeannassar5@gmail.com
-  mobile: +81-080-8333-6065
-  github: masasin
-  linkedin: masasin
+  email: kareem.ergawy@gmail.com
+  mobile: +49-159-0110-5481
+  github: KareemErgawy
+  # linkedin: masasin
 
 # address:
 #   street: Unit 104, 3--7 \={O}etsukaharach\={o}
@@ -34,20 +34,21 @@ contact:
 order:
   - [general, 0, 0, 0]
   - [education, 1, Education, 0]
-  - [publications, 1, Publications, 0]
-  - [coop, 1, Co-op experience, experience]
-  - [projects, 1, Selected projects, 0]
+  # - [publications, 1, Publications, 0]
+  - [research, 1, Research projects, experience]
+  - [professional, 1, Professional experience/projects, experience]
+  - [projects, 1, Other/hobby projects, 0]
   - [courses, 1, Selected courses, latextype_double_items]
-  - [skills, 1, Technical skills, 0]
-  - [languages, 1, Natural languages, 0]
+  # - [skills, 1, Technical skills, 0]
+  # - [languages, 1, Natural languages, 0]
 
 general:
-  - name: Interests
-    description: Automation, AI, robotics, statistics, space, anatomy
-  - name: Citizenships
-    description: Canada, Lebanon, Sierra Leone
-  - name: Certifications
-    description: CPR HCP (Health Care Provider), Lebanese driving license
+  - name: Objective
+    description: Seeking a challenging opportunity in compiler construction. I am specially interested in building compilers that both enhance the user-friendliness and performance of programming languages for parallel hardware.
+  # - name: Citizenships
+    # description: Canada, Lebanon, Sierra Leone
+  # - name: Certifications
+    # description: CPR HCP (Health Care Provider), Lebanese driving license
 
 skills:
   - Python (incl. SciPy stack), C++, C, ROS, Matlab, gnuplot, \LaTeX
@@ -64,96 +65,77 @@ languages:
   - name: Beginner
     description: German, Mandarin, Russian, Krio
 
-coop:
-  - date: Spring 2012
-    about: Junior Engineer
-    employer: Starquip Integrated Systems, Ltd
-    location: Toronto, ON
-    url: http://starquip.com
+research:
+  - date: Jan 2017--Present
+    about: Master Thesis Student 
+    employer: Compiler Design Laboratory, Saarland University
+    location: Saarbrücken, Saarland
+    url: http://compilers.cs.uni-saarland.de/
     notes:
-      - Assisted in the mechanical design of custom pneumatic lift-assist devices
-      - Created modular assemblies and circuits
-      - Reduced design time for new systems
-      - Converted 2D drawings to 3D assemblies
-      - Produced ASME-compliant drawings
+      - Working on extending LLVM IR for better fork-join parallelism support
+      - Implementing the new parallel instructions.
+      - Implementing backends and fronends for parallel models like OpenMP to target the new IR
+      - Wrote the language reference documentation.
+      - https://github.com/parallel-ir
 
-  - date: Fall 2011
-    about: Junior Project Engineer
-    employer: Kevin Quan Studios, Ltd
-    location: Toronto, ON
-    url: http://www.kqbikes.com
-    notes:
-      - Completed basic and intermediate Solidworks instruction
-      - Created assemblies and drawings of mountain and racing bicycles
-      - Wrote airfoil generator and exporter using LibreOffice Calc, Python
-      - Performed 2D and 3D CFD analysis of airfoils and bicycles
-      - Determined the optimum configuration for several racing bicycles
-      - Designed tooling molds and parts for various bicycle components
-
-  - date: Winter 2011
-    about: Hardware Associate
-    employer: Intelligent Mechatronics Systems, Inc
-    location: Waterloo, ON
-    url: http://www.intellimec.com
-    notes:
-      - Prototyped hardware solutions for future products
-      - Provided general assistance to lead design engineers
-
-  - date: Spring 2010
+  - date: Apr 2016--Present
     about: Research Assistant
-    department: Multiscale Additive Manufacturing Lab
-    employer: University of Waterloo
-    location: Waterloo, ON
-    url: http://rpl.uwaterloo.ca
+    employer: Intel Visual Computing Institute 
+    location: Saarbrücken, Saarland
+    url: http://www.intel-vci.uni-saarland.de/
     notes:
-      - Designed, procured, and built essential parts for the enclosure, printhead assembly, and environmental isolation system for a solid freeform fabrication workstation
-      - Workstation produces 3D scaffolds for bone and cartilage regrowth
-      - Performed image processing on electron micrographs using Octave
+      - Design and implementation of a parallel primitives library called libpp
+      - Implemented data-parllel algorithms like reduction, scan, and radix sort
+      - Implemented in the research compiler framework AnyDSL using the language Impala
+      - https://anydsl.github.io/
+      
+professional:
+  - date: Apr 2013--Oct 2014
+    about: Software Engineer 
+    employer: Instinct Games
+    location: Cairo, Egypt
+    url: http://www.instinctgames.com/
+    notes:
+      - Worked on a proprietary, cross-platform game network called PlayVerse
+      - Using C++, .Net and MVC 4, Unity3D, and Unreal Script
+      - https://www.playverse.com
 
-  - date: Fall 2009
-    about: Research Assistant
-    department: Computer Vision and Mobile Robotics Lab
-    employer: American University of Beirut
-    location: Beirut, Lebanon
-    url: http://www.aub.edu.lb/fea/me/research_labs/cvl/Pages/home.aspx
+  - date: Jan 2013--Apr 2013
+    about: Game and Augmented Reality Developer
+    employer: 5D Agency
+    location: Cairo, Egypt
+    url: http://www.5d-agency.com/
     notes:
-      - Researched and developed a positional navigation system for robots
-      - Quantized Inertial Measurement Unit (IMU) error
+      - Develop various interactive games and augmented reality applications that are targeted towards advertising and marketing purposes
+      - Using Unity3D
 
-  - date: Winter 2009
-    about: Engineer in Training
-    employer: Sierra Construction Systems, Ltd
-    location: Freetown, Sierra Leone
-    url: http://www.sierraconstructionsystems.com
+  - date: Jan 2010--Jun 2012
+    about: Java Software Developer
+    employer: Al-Faris Information Technologies Company
+    location: Cairo, Egypt
+    url: http://www.afitco.com/
     notes:
-      - Computerized payroll and significantly saved time and resources using Microsoft Excel, Word, and VBA programming
-      - Payroll productivity increased by approximately 6000\%
-      - Performed cost and time estimation for various construction projects
+      - Worked on the Internet banking platform for Ahli United Bank in Bahrain
+      - I was involved in the development of a workflow design and management system
+      - Worked on the money transfer and online payment subsystem
+      - Participated in integrating our Internet banking system with the middle-ware interface of the bank
+      - Using Java EE, JBoss Seam, RichFaces, EJB, JBoss Java Business Process Management Library, JBoss Drools rules engine
 
 education:
-  - date: 2014--Present
-    school: Kyoto University
-    location: Kyoto, Japan
-    major: MS Mechanical Engineering Science
-    affiliation: Mechatronics Laboratory
-    urls:
-      school: http://kyoto-u.ac.jp
-      affiliation: www.mechatronics.me.kyoto-u.ac.jp
-  - date: 2013--2014
-    school: Kyoto University
-    location: Kyoto, Japan
-    major: Research student
-    affiliation: Mechatronics Laboratory
-    urls:
-      school: http://kyoto-u.ac.jp
-      affiliation: www.mechatronics.me.kyoto-u.ac.jp
-  - date: 2008--2013
-    school: University of Waterloo
-    location: Waterloo, ON
-    major: BASc, Honours Mechatronics Engineering
-    urls:
-      school: http://www.uwaterloo.ca
-      major: https://uwaterloo.ca/mechanical-mechatronics/engineering/program-overview
+  - date: Apr 2015--Present
+    school: Saarland University
+    location: Saarbrücken, Saarland
+    major: Master's in Computer Science
+    # affiliation: Mechatronics Laboratory
+    notes:
+      - Current total average 1.8
+  - date: Sep 2004--Aug 2008
+    school: Zagazig University
+    location: Zagazig, Egypt
+    major: Bachelor's in Computer Science
+    affiliation: Faculty of Computers and Informatics
+    notes:
+      - Graduated Ranking 1st out of about 200 students in CS department
 
 projects:
   - Software lead for lab's teleoperation robot, built from scratch
