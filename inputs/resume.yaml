@@ -12,7 +12,7 @@ theme:
   style: banking
   colour: purple
 
-title: C.V.
+# title: C.V.
 
 # Markdown details
 # pdf: /assets/resume.pdf
@@ -39,23 +39,24 @@ order:
   - [professional, 1, Professional experience/projects, experience]
   - [projects, 1, Other/hobby projects, experience]
   # - [courses, 1, Selected courses, latextype_double_items]
-  # - [skills, 1, Technical skills, 0]
+  - [skills, 1, Technical skills, 0]
   # - [languages, 1, Natural languages, 0]
 
 general:
   - name: Objective
-    description: Seeking a challenging opportunity in compiler construction. I am specially interested in building compilers that both enhance the user-friendliness and performance of programming languages for parallel hardware.
+    # Compilers objective
+    # description: Seeking a challenging opportunity in compiler construction. I am specially interested in building compilers that both enhance the user-friendliness and performance of programming languages for parallel hardware.
+    # General objective
+    description: Seeking a challenging opportunity as a software engineer. I am specially interested in building tools that enable other programmers be productive such as compilers and debuggers.
   # - name: Citizenships
     # description: Canada, Lebanon, Sierra Leone
   # - name: Certifications
     # description: CPR HCP (Health Care Provider), Lebanese driving license
 
 skills:
-  - Python (incl. SciPy stack), C++, C, ROS, Matlab, gnuplot, \LaTeX
-  - Linux (Arch, Fedora, Ubuntu), Microsoft Windows (XP to 10)
-  - Raspberry Pi, Arduino, mbed, AVR, Allen Bradley PLC
-  - Solidworks, Autodesk Inventor, AutoCAD, Sketchup
-  - Vim, Git, Gimp, Inkscape, LibreOffice, Microsoft Office
+  - C++, LLVM IR, Impala research language (Over the last 2.5 years)
+  - Microsoft .Net and MVC 4, Unity3D, and Unreal Script (2013 - 2014)
+  - Java EE, JBoss Seam, RichFaces, EJB, JBoss Java BPM, JBoss Drools (2008 - 2012)
 
 languages:
   - name: Fluent
@@ -72,11 +73,11 @@ research:
     location: Saarbrücken, Saarland
     url: http://compilers.cs.uni-saarland.de/
     notes:
-      - Working on extending LLVM IR for better fork-join parallelism support
-      - Implementing the new parallel instructions.
-      - Implementing backends and fronends for parallel models like OpenMP to target the new IR
-      - Wrote the language reference documentation.
       - https://github.com/parallel-ir
+      - Working on extending LLVM IR for better fork-join parallelism support
+      # - Implementing the new parallel instructions.
+      # - Implementing backends and fronends for parallel models like OpenMP to target the new IR
+      # - Wrote the language reference documentation
 
   - date: Apr 2016--Present
     about: Research Assistant
@@ -84,10 +85,10 @@ research:
     location: Saarbrücken, Saarland
     url: http://www.intel-vci.uni-saarland.de/
     notes:
-      - Design and implementation of a parallel primitives library called libpp
-      - Implemented data-parllel algorithms like reduction, scan, and radix sort
-      - Implemented in the research compiler framework AnyDSL using the language Impala
       - https://anydsl.github.io/
+      - Design and implementation of a parallel primitives library called libpp
+      # - Implemented data-parllel algorithms like reduction, scan, and radix sort
+      # - Implemented in the research compiler framework AnyDSL using the language Impala
       
 professional:
   - date: Apr 2013--Oct 2014
@@ -96,9 +97,9 @@ professional:
     location: Cairo, Egypt
     url: http://www.instinctgames.com/
     notes:
-      - Worked on a proprietary, cross-platform game network called PlayVerse
-      - Using C++, .Net and MVC 4, Unity3D, and Unreal Script
       - https://www.playverse.com
+      - Worked on a proprietary, cross-platform game network called PlayVerse
+      # - Using C++, .Net and MVC 4, Unity3D, and Unreal Script
 
   - date: Jan 2013--Apr 2013
     about: Game and Augmented Reality Developer
@@ -106,8 +107,8 @@ professional:
     location: Cairo, Egypt
     url: http://www.5d-agency.com/
     notes:
-      - Develop various interactive games and augmented reality applications that are targeted towards advertising and marketing purposes
-      - Using Unity3D
+      - Develop various interactive games and AR applications for advertising purposes
+      # - Using Unity3D
 
   - date: Jan 2010--Jun 2012
     about: Java Software Developer
@@ -116,10 +117,10 @@ professional:
     url: http://www.afitco.com/
     notes:
       - Worked on the Internet banking platform for Ahli United Bank in Bahrain
-      - I was involved in the development of a workflow design and management system
-      - Worked on the money transfer and online payment subsystem
-      - Participated in integrating our Internet banking system with the middle-ware interface of the bank
-      - Using Java EE, JBoss Seam, RichFaces, EJB, JBoss Java Business Process Management Library, JBoss Drools rules engine
+      # - I was involved in the development of a workflow design and management system
+      # - Worked on the money transfer and online payment subsystem
+      # - Participated in integrating our Internet banking system with the middle-ware interface of the bank
+      # - Using Java EE, JBoss Seam, RichFaces, EJB, JBoss Java Business Process Management Library, JBoss Drools rules engine
 
 education:
   - date: Apr 2015--Present
@@ -141,15 +142,15 @@ projects:
   - date: Bachelor's thesis project
     employer: Smart Debugger
     notes:
-      - The aim of this project is to provide a semi-automated debugger for the Java platform that uses an interactive technique to help the user locate bugs easier and faster
-      - Using Java, JPDI (Java Platform Debug Interface), JSP, AJAX
       - https://sites.google.com/site/kareemergawy/smartdebugging
+      - Provides a semi-automated debugger for the Java SE platform
+      # - Using Java, JPDI (Java Platform Debug Interface), JSP, AJAX
 
   - date: Hobby project
     employer: Robot SLAM
     notes:
-      - This is the project I am currently working on. It is a research project about how to apply the set of techniques called SLAM (Simultaneous Localization and Mapping) on the Lego Mindstorms NXT platform using computer vision as a means for landmark extraction.
       - https://sites.google.com/site/kareemergawy/robot-slam
+      - An effort to apply SLAM (Simultaneous Localization and Mapping) on the Lego Mindstorms NXT platform
 
   - date: Hobby project
     employer: Competitive programming
